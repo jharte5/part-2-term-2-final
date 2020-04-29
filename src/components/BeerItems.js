@@ -3,7 +3,7 @@ import React from 'react'
 export default function BeerItems(props) {
     return (
         <div>
-            <img className = "header" src={props.beer.image_url}/>
+            {props.beer && <img className = "header" src={props.beer.image_url}/>}
             {props.beer && <div className="ui card" style={{width:'100vw', padding:'20px'}}>
                 <div className ="content">
                     <div className="header">{props.beer.name}</div>
